@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<TextView
+			android:id="@+id/catalog"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="#ececec"
+			android:paddingBottom="5dp"
+			android:paddingLeft="15dp"
+			android:paddingTop="5dp"
+			android:text="A"
+			android:textColor="#666666"
+			android:textSize="@dimen/font_size_middle"/>
+
+		<View
+			style="@style/slide_menu_line"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="65dp">
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="20">
+
+			<com.alex.app.lifeassistant.view.CircleImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/slide_menu_user"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="80">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="韵达快递"
+					android:textColor="#336598"
+					android:textSize="@dimen/font_size_middle"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="400-821-6789"
+					android:textColor="#bdbdbd"
+					android:textSize="12sp"/>
+			</LinearLayout>
+		</RelativeLayout>
+
+
+	</LinearLayout>
+
+	<View
+		style="@style/slide_menu_line"/>
+</LinearLayout>

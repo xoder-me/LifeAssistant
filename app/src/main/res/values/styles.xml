@@ -1,0 +1,190 @@
+<resources>
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowFullscreen">true</item>
+
+	</style>
+
+	<!--Activity 切换动画-->
+	<style name="AnimationPreview">
+		<item name="android:windowEnterAnimation">@anim/fade_in</item>
+		<item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+
+	<!--侧滑菜单 选项栏的基础样式-->
+	<style name="slide_menu_base">
+		<item name="android:background">@drawable/slide_menu_item_select</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<!--侧滑菜单 选项栏下的下划线的样式-->
+	<style name="slide_menu_line">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/line_height</item>
+		<item name="android:background">@color/slide_menu_line</item>
+	</style>
+
+	<!--侧滑菜单 选项栏前缀图标的样式-->
+	<style name="slide_menu_item_img">
+		<item name="android:padding">5dp</item>
+		<item name="android:layout_width">35dp</item>
+		<item name="android:layout_height">35dp</item>
+	</style>
+
+	<!--侧滑菜单 选项栏描述文字基础样式-->
+	<style name="slide_menu_item_desc_base">
+		<item name="android:textSize">@dimen/font_size_middle</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<!--侧滑菜单 选项栏描述文字拓展样式-->
+	<style name="slide_menu_item_desc" parent="slide_menu_item_desc_base">
+		<item name="android:textColor">#2F2F2F</item>
+	</style>
+
+	<!--快递底部导航栏 按钮基本样式-->
+	<style name="tab_express">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+
+	<!--快递底部导航栏 按钮图片样式-->
+	<style name="tab_express_img">
+		<item name="android:layout_width">40dp</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:duplicateParentState">true</item>
+	</style>
+
+	<!--快递底部导航栏 按钮文字样式-->
+	<style name="tab_express_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:duplicateParentState">true</item>
+		<item name="android:textColor">@color/tab_color</item>
+		<item name="android:textSize">@dimen/font_size_small</item>
+	</style>
+
+	<!--自定义Dialog 演示-->
+	<style name="custom_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<!-- Dialog的windowFrame框为无 -->
+		<item name="android:windowIsFloating">true</item>
+		<!-- 是否漂现在activity上 -->
+		<item name="android:windowIsTranslucent">true</item>
+		<!-- 是否半透明 -->
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<!-- 去除黑色边框的关键设置项 -->
+		<item name="android:backgroundDimEnabled">true</item>
+		<!-- 屏幕背景是否变暗 -->
+		<item name="android:backgroundDimAmount">0.6</item>
+	</style>
+
+	<!--顶部滑动栏的基础样式-->
+	<style name="MyWidget" parent="@android:style/Theme"/>
+
+	<!--顶部滑动栏的 Tab文本样式-->
+	<style name="MyWidget.TabText">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/tab_indicator_text</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">marquee</item>
+	</style>
+
+	<!--顶部滑动栏 ListView的样式-->
+	<style name="MyWidget.ListView">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:cacheColorHint">#00ffffff</item>
+		<item name="android:dividerHeight">2px</item>
+		<item name="android:listSelector">@android:color/transparent</item>
+		<item name="android:fadeScrollbars">true</item>
+	</style>
+
+	<!--吉时底部时间选择栏-->
+	<style name="jishi_tv_style">
+		<item name="android:drawableBottom">@drawable/lhl_jishi</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/jishi_text_color</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+
+	<!--吉时查看 下划线样式-->
+	<style name="jishi_line">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/line_height</item>
+		<item name="android:background">#9B9B9B</item>
+	</style>
+
+	<!--聊天 时间显示风格-->
+	<style name="chat_date_style">
+		<item name="android:layout_marginTop">5dp</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#9D9D9D</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:padding">2dp</item>
+		<item name="android:layout_gravity">center</item>
+	</style>
+
+	<!--基于线性布局的九宫格-->
+	<!--表格TextView 样式-->
+	<style name="grid_textview">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#303030</item>
+	</style>
+
+	<!--表格ImageView 样式-->
+	<style name="grid_imageview">
+		<item name="android:layout_width">50dp</item>
+		<item name="android:layout_height">50dp</item>
+		<item name="android:scaleType">centerCrop</item>
+	</style>
+
+	<!--表格父线性容器样式-->
+	<style name="grid_linearlayout">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+
+	<!--第二层容器样式-->
+	<style name="grid_linear_layout">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_margin">1px</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:background">@drawable/selector_item_grid</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+	</style>
+
+	<!--最外层容器样式-->
+	<style name="grid_out_layout">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:orientation">horizontal</item>
+	</style>
+	<!--/基于线性布局的九宫格-->
+</resources>

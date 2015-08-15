@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	package="com.alex.app.lifeassistant"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"/>
+
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+
+	<application
+		android:name=".application.InitApplication"
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		tools:replace="icon">
+
+		<meta-data
+			android:name="com.thinkland.juheapi.openid"
+			android:value="JH5376f38c0e51efd458cac8ca5589de5d"/>
+
+		<activity
+			android:name=".activity.MainActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/Base.Theme.AppCompat.Light"
+			android:windowSoftInputMode="adjustResize">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".demo.TestActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.NoteEditActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.PictureZoomActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.NoteActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.WebViewActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.FlowManagerActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.NewsActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+
+		<activity
+			android:name=".activity.CompassActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.FlashLightActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activity.JiShiActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+
+		<activity
+			android:name=".activity.LaoHuangLiActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activity.SplashActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activity.ExpressQueryResultActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activity.ExpressChioceActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing"/>
+	</application>
+</manifest>

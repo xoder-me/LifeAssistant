@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+
+		<RelativeLayout
+			android:id="@+id/action_bar_one"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#57A921">
+
+			<ImageView
+				android:id="@+id/done"
+				android:layout_width="45dp"
+				android:layout_height="match_parent"
+				android:onClick="done"
+				android:padding="10dp"
+				android:src="@drawable/ic_action_done_light"/>
+
+			<TextView
+				android:id="@+id/show_num"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/done"
+				android:textColor="#fff"
+				android:textSize="18sp"/>
+
+			<ImageView
+				android:layout_width="45dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:background="@drawable/action_bar_btn"
+				android:onClick="delete"
+				android:padding="10dp"
+				android:src="@drawable/ic_action_delete_light"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/action_bar_two"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#57A921">
+
+			<ImageView
+				android:id="@+id/back"
+				android:layout_width="45dp"
+				android:layout_height="match_parent"
+				android:onClick="back"
+				android:background="@drawable/action_bar_btn"
+				android:padding="10dp"
+				android:src="@drawable/action_bar_back_light"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/back"
+				android:text="所有笔记"
+				android:textColor="#fff"
+				android:textSize="18sp"/>
+
+
+			<ImageView
+				android:id="@+id/more"
+				android:layout_width="45dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:background="@drawable/action_bar_btn"
+				android:padding="10dp"
+				android:src="@drawable/action_bar_more_light"/>
+
+			<ImageView
+				android:id="@+id/add"
+				android:layout_width="45dp"
+				android:layout_height="match_parent"
+				android:layout_toLeftOf="@+id/more"
+				android:background="@drawable/action_bar_btn"
+				android:onClick="add"
+				android:padding="10dp"
+				android:src="@drawable/action_bar_add_light"/>
+		</RelativeLayout>
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/lv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none"/>
+</LinearLayout>

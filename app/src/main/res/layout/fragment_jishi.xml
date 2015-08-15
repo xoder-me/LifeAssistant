@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lhl_back_base"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="50">
+
+		<TextView
+			android:id="@+id/tv_date"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:textColor="@color/lhl_base"
+			android:textSize="35dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="40"
+		android:orientation="vertical">
+
+		<View style="@style/jishi_line"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:background="#e3d8c6"
+				android:gravity="center"
+				android:text="时刻"
+				android:textColor="#2F2F2F"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/tv_time"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="7"
+				android:gravity="center"
+				android:padding="5dp"
+				android:textColor="#7D7D7D"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+		<View style="@style/jishi_line"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:background="#e3d8c6"
+				android:gravity="center"
+				android:text="适宜"
+				android:textColor="#2F2F2F"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/tv_shiyi"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="7"
+				android:gravity="center"
+				android:padding="5dp"
+				android:textColor="#7D7D7D"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+		<View style="@style/jishi_line"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:background="#e3d8c6"
+				android:gravity="center"
+				android:text="忌讳"
+				android:textColor="#2F2F2F"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/tv_jihui"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="7"
+				android:gravity="center"
+				android:padding="5dp"
+				android:textColor="#7D7D7D"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+		<View style="@style/jishi_line"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:background="#e3d8c6"
+				android:gravity="center"
+				android:text="描述"
+				android:textColor="#2F2F2F"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/tv_miaoshu"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="7"
+				android:gravity="center"
+				android:padding="5dp"
+				android:textColor="#7D7D7D"
+				android:textSize="14sp"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:background="@color/lhl_base"
+		android:orientation="horizontal">
+
+		<CheckedTextView
+			android:id="@+id/ctv_zi"
+			style="@style/jishi_tv_style"
+			android:checked="true"
+			android:text="子"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_chou"
+			style="@style/jishi_tv_style"
+			android:text="丑"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_yin"
+			style="@style/jishi_tv_style"
+			android:text="寅"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_mou"
+			style="@style/jishi_tv_style"
+			android:text="卯"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_chen"
+			style="@style/jishi_tv_style"
+			android:text="辰"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_si"
+			style="@style/jishi_tv_style"
+			android:text="巳"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_wu"
+			style="@style/jishi_tv_style"
+			android:text="午"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_wei"
+			style="@style/jishi_tv_style"
+			android:text="未"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_shen"
+			style="@style/jishi_tv_style"
+			android:text="申"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_you"
+			style="@style/jishi_tv_style"
+			android:text="酉"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_xu"
+			style="@style/jishi_tv_style"
+			android:text="戌"/>
+
+		<CheckedTextView
+			android:id="@+id/ctv_hai"
+			style="@style/jishi_tv_style"
+			android:text="亥"/>
+	</LinearLayout>
+</LinearLayout>

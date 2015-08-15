@@ -1,0 +1,34 @@
+<resources>
+	<string name="app_name">生活助手</string>
+
+	<!--侧滑菜单 选项文字-->
+	<string name="slide_menu_top_need">生活小助手</string>
+	<string name="slide_menu_top_desc">简单、方便、好用！</string>
+	<string name="go_to_home">回到首页</string>
+	<string name="chat_machine">聊天机器人</string>
+	<string name="payment">充值缴费</string>
+	<string name="entertainment">影视娱乐</string>
+	<string name="weather_query">天气查询</string>
+	<string name="express_query">快递查询</string>
+	<string name="often_used">生活常用</string>
+	<string name="setting">设置</string>
+
+	<!--快递查询 底部导航栏文字-->
+	<string name="tab_express_send">寄快递</string>
+	<string name="tab_express_query">查询</string>
+	<string name="tab_express_mine">我的</string>
+
+	<!--指南针-->
+	<string name="value_N">北</string>
+	<string name="value_S">南</string>
+	<string name="value_E">东</string>
+	<string name="value_W">西</string>
+
+	<!--XListView-->
+	<string name="header_hint_refresh_normal">下拉刷新</string>
+	<string name="header_hint_refresh_ready">释放以刷新数据</string>
+	<string name="header_hint_refresh_loading">刷新中...</string>
+	<string name="header_hint_refresh_time">时间：</string>
+	<string name="footer_hint_load_normal">加载更多</string>
+	<string name="footer_hint_load_ready">释放以加载更多</string>
+</resources>

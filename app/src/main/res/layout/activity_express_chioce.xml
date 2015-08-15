@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<com.alex.app.lifeassistant.view.TitleBarView
+		android:id="@+id/title_bar"
+		android:layout_width="match_parent"
+		android:layout_height="55dp"/>
+
+	<RelativeLayout
+		android:id="@+id/rl_mine_query"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="5dp"
+		android:background="@drawable/express_mine_search_back"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/iv_chioce_com"
+			android:layout_width="45dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:src="@drawable/express_mine_search"/>
+
+		<EditText
+			android:id="@+id/et_chioce_com"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_toRightOf="@+id/iv_chioce_com"
+			android:background="@null"
+			android:hint="请选择快递公司"
+			android:singleLine="true"/>
+	</RelativeLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ListView
+			android:id="@+id/company_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:divider="@null"/>
+
+		<TextView
+			android:id="@+id/dialog"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_gravity="center"
+			android:background="@drawable/sort_idex_toast"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			android:textSize="30dp"
+			android:visibility="invisible"/>
+
+		<FrameLayout
+			android:id="@+id/frame_front"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:background="#ddffffff"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/tv_catalog"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:paddingLeft="15dp"
+				android:text="A"
+				android:textColor="#666666"
+				android:textSize="@dimen/font_size_big"/>
+		</FrameLayout>
+
+		<FrameLayout
+			android:layout_width="30dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="right|center">
+
+			<com.alex.app.lifeassistant.widget.SideBar
+				android:id="@+id/sidebar"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+		</FrameLayout>
+	</FrameLayout>
+</LinearLayout>

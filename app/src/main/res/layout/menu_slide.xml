@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="96dp"
+		android:background="@drawable/side_menu_top"
+		android:orientation="horizontal">
+
+		<com.alex.app.lifeassistant.view.CircleImageView
+			android:id="@+id/slide_menu_user"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/slide_menu_user"/>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="4"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/slide_menu_top_need"
+				android:textColor="#fff"
+				android:textSize="@dimen/font_size_middle"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:text="@string/slide_menu_top_desc"
+				android:textColor="#fff"/>
+
+		</LinearLayout>
+
+		<ImageView
+			android:layout_width="0dp"
+			android:layout_height="10dp"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/slide_menu_arrow_left"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="20dp"
+		android:orientation="vertical">
+
+		<!--回到首页-->
+		<RelativeLayout
+			android:id="@+id/rl_gob_to_home"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_go_to_home"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_home"/>
+
+			<TextView
+				android:id="@+id/tv_go_to_home"
+				style="@style/slide_menu_item_desc_base"
+				android:layout_toRightOf="@+id/iv_go_to_home"
+				android:text="@string/go_to_home"
+				android:textColor="@color/base_color"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<!--生活常用-->
+		<RelativeLayout
+			android:id="@+id/rl_often_used"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_often_used"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_often_used"/>
+
+			<TextView
+				android:id="@+id/tv_often_used"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_often_used"
+				android:text="@string/often_used"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+
+		<!--快递查询-->
+		<RelativeLayout
+			android:id="@+id/rl_express_query"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_express_query"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_express"/>
+
+			<TextView
+				android:id="@+id/tv_express_query"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_express_query"
+				android:text="@string/express_query"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<!--天气查询-->
+		<RelativeLayout
+			android:id="@+id/rl_weather_query"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_weather_query"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_weather"/>
+
+			<TextView
+				android:id="@+id/tv_weather_query"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_weather_query"
+				android:text="@string/weather_query"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<!--影视娱乐-->
+		<RelativeLayout
+			android:id="@+id/rl_entertainment"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_entertainment"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_entertainment"/>
+
+			<TextView
+				android:id="@+id/tv_entertainment"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_entertainment"
+				android:text="@string/entertainment"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<!--充值缴费-->
+		<RelativeLayout
+			android:id="@+id/rl_payment"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_payment"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_payment"/>
+
+			<TextView
+				android:id="@+id/tv_payment"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_payment"
+				android:text="@string/payment"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="10dp"
+				android:text="(暂不提供)"
+				android:textColor="#9a9a9a"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<!--小机器人-->
+		<RelativeLayout
+			android:id="@+id/rl_chat_machine"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_chat_machine"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_chat_machine"/>
+
+			<TextView
+				android:id="@+id/tv_chat_machine"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_chat_machine"
+				android:text="@string/chat_machine"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+
+		<!--设置-->
+		<RelativeLayout
+			android:id="@+id/rl_setting"
+			style="@style/slide_menu_base">
+
+			<ImageView
+				android:id="@+id/iv_setting"
+				style="@style/slide_menu_item_img"
+				android:src="@drawable/slide_menu_setting"/>
+
+			<TextView
+				android:id="@+id/tv_setting"
+				style="@style/slide_menu_item_desc"
+				android:layout_toRightOf="@+id/iv_setting"
+				android:text="@string/setting"/>
+		</RelativeLayout>
+
+		<View
+			style="@style/slide_menu_line"/>
+	</LinearLayout>
+</LinearLayout>

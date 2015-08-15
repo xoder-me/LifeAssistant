@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/frame_container_express"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/frame_line"/>
+
+	<View
+		android:id="@+id/frame_line"
+		style="@style/slide_menu_line"
+		android:layout_above="@+id/ll_tab"
+		android:layout_marginBottom="5dp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_tab"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/ll_express_mine"
+			style="@style/tab_express">
+
+			<ImageView
+				android:id="@+id/iv_express_mine"
+				style="@style/tab_express_img"
+				android:src="@drawable/tab_expresss_mine"/>
+
+			<TextView
+				android:id="@+id/tv_express_mine"
+				style="@style/tab_express_text"
+				android:text="@string/tab_express_mine"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_express_query"
+			style="@style/tab_express">
+
+			<ImageView
+				android:id="@+id/iv_express_query"
+				style="@style/tab_express_img"
+				android:src="@drawable/tab_expresss_search"/>
+
+			<TextView
+				android:id="@+id/tv_express_query"
+				style="@style/tab_express_text"
+				android:text="@string/tab_express_query"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_express_send"
+			style="@style/tab_express">
+
+			<ImageView
+				android:id="@+id/iv_express_send"
+				style="@style/tab_express_img"
+				android:src="@drawable/tab_expresss_send"/>
+
+			<TextView
+				android:id="@+id/tv_express_send"
+				style="@style/tab_express_text"
+				android:text="@string/tab_express_send"/>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

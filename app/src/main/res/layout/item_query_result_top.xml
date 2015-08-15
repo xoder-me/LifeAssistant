@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	                android:layout_width="match_parent"
+	                android:layout_height="85dp">
+
+		<com.alex.app.lifeassistant.view.CircleImageView
+			android:id="@+id/iv_express_logo"
+			android:layout_width="65dp"
+			android:layout_height="65dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="15dp"
+			android:src="@drawable/slide_menu_user"/>
+
+		<TextView
+			android:id="@+id/tv_express_com"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5dp"
+			android:layout_toRightOf="@+id/iv_express_logo"
+			android:text="韵达"
+			android:textSize="@dimen/font_size_big"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/tv_express_code"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5dp"
+			android:layout_toRightOf="@+id/tv_express_com"
+			android:text="1901150911907"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
+
+		<View
+			style="@style/slide_menu_line"
+			android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+</merge>

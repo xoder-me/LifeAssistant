@@ -1,0 +1,18 @@
+<resources>
+	<!--侧滑菜单阴影区大小-->
+	<dimen name="slide_menu_shadow">60dp</dimen>
+	<!--侧滑菜单屏幕剩余空间大小-->
+	<dimen name="slide_menu_behind">80dp</dimen>
+	<!--中等字体大小-->
+	<dimen name="font_size_middle">16sp</dimen>
+	<!--分割线高度-->
+	<dimen name="line_height">0.3dp</dimen>
+	<dimen name="font_size_small">10sp</dimen>
+	<dimen name="font_size_big">20sp</dimen>
+	<!--顶部导航栏 页面切换的间隔-->
+	<dimen name="page_margin_width">5dp</dimen>
+	<!--XListView-->
+	<dimen name="header_height">60dp</dimen>
+	<dimen name="footer_height">90dp</dimen>
+	<dimen name="footer_padding">10dp</dimen>
+</resources>

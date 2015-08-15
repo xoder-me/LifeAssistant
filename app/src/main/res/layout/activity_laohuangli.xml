@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lhl_back_base"
+              android:orientation="vertical">
+
+	<com.alex.app.lifeassistant.view.TitleBarView
+		android:id="@+id/title_bar"
+		android:layout_width="match_parent"
+		android:layout_height="55dp"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="40">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="fitStart"
+			android:src="@drawable/lhl_top"/>
+
+		<TextView
+			android:id="@+id/tv_lhl_day"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="12"
+			android:textColor="@color/lhl_base"
+			android:textSize="120sp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_margin="5dp"
+		android:layout_weight="60">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/lhl_frame"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="6dp"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="20"
+						android:background="@drawable/lhl_img_back_one"
+						android:padding="2dp">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:background="@drawable/lhl_img_back_two"
+							android:gravity="center_horizontal"
+							android:orientation="vertical">
+
+							<ImageView
+								android:id="@+id/iv_lhl_xingzuo"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="7"
+								android:src="@drawable/lhl_cancer"/>
+
+							<TextView
+								android:id="@+id/tv_lhl_xingzuo"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="3"
+								android:gravity="center"
+								android:text="螃蟹座"
+								android:textColor="@color/lhl_base"
+								android:textSize="@dimen/font_size_small"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="3dp"
+						android:layout_marginRight="3dp"
+						android:layout_weight="40"
+						android:background="@drawable/lhl_img_back_one"
+						android:orientation="vertical"
+						android:padding="1dp">
+
+						<TextView
+							android:id="@+id/tv_lhl_yinli_year"
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="3"
+							android:background="@color/lhl_back_base"
+							android:gravity="center"
+							android:text="癸巳(蛇)年十二月"
+							android:textColor="@color/lhl_base"
+							android:textSize="@dimen/font_size_small"/>
+
+						<TextView
+							android:id="@+id/tv_lhl_yinli_date"
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="7"
+							android:gravity="center"
+							android:text="初一"
+							android:textColor="@color/lhl_back_base"
+							android:textSize="18sp"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginRight="2dp"
+						android:layout_weight="40"
+						android:background="@drawable/lhl_img_back_one"
+						android:orientation="vertical"
+						android:padding="1dp">
+
+						<TextView
+							android:id="@+id/tv_lhl_day_eng"
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="3"
+							android:background="@color/lhl_back_base"
+							android:gravity="center"
+							android:text="Sunday"
+							android:textColor="@color/lhl_base"
+							android:textSize="@dimen/font_size_small"/>
+
+						<TextView
+							android:id="@+id/tv_lhl_day_cn"
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="7"
+							android:gravity="center"
+							android:text="星期日"
+							android:textColor="@color/lhl_back_base"
+							android:textSize="18sp"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="20"
+						android:background="@drawable/lhl_img_back_one"
+						android:padding="2dp">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:background="@drawable/lhl_img_back_two"
+							android:gravity="center_horizontal"
+							android:orientation="vertical">
+
+							<ImageView
+								android:id="@+id/iv_lhl_chongsha"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="7"
+								android:src="@drawable/lhl_cattle_sheep"/>
+
+							<TextView
+								android:id="@+id/tv_lhl_chongsha"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="3"
+								android:gravity="center"
+								android:text="冲虎煞南"
+								android:textColor="@color/lhl_base"
+								android:textSize="@dimen/font_size_small"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="60dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+
+					<RelativeLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="20">
+
+						<TextView
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:layout_centerInParent="true"
+							android:background="@drawable/lhl_text_back"
+							android:gravity="center"
+							android:text="宜"
+							android:textColor="@color/lhl_back_base"
+							android:textSize="18sp"/>
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/tv_lhl_yi"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginRight="10dp"
+						android:layout_weight="80"
+						android:gravity="center_vertical"
+						android:text="嫁娶 祭祀 祈福 求嗣 开光 出行 解除 入宅 移徙 纳畜 入殓 破土 修坟 立碑"
+						android:textColor="@color/lhl_base"/>
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.3dp"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="2dp"
+					android:layout_marginRight="2dp"
+					android:background="@color/lhl_base"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="60dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+
+					<RelativeLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="20">
+
+						<TextView
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:layout_centerInParent="true"
+							android:background="@drawable/lhl_text_back"
+							android:gravity="center"
+							android:text="忌"
+							android:textColor="@color/lhl_back_base"
+							android:textSize="18sp"/>
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/tv_lhl_ji"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginRight="10dp"
+						android:layout_weight="80"
+						android:gravity="center_vertical"
+						android:text="伐木 作梁 动土 安床 破土 栽种 造桥"
+						android:textColor="@color/lhl_base"/>
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.3dp"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="2dp"
+					android:layout_marginRight="2dp"
+					android:background="@color/lhl_base"/>
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="5dp"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="30">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="5dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="3"
+							android:gravity="center"
+							android:text="吉神趋宜"
+							android:textColor="@color/lhl_base"
+							android:textStyle="bold"/>
+
+						<TextView
+							android:id="@+id/tv_lhl_jishen"
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="7"
+							android:gravity="center_horizontal"
+							android:text="月德 母仓 三合 天喜 天医 玉堂 青龙 除神 鸣犬"
+							android:textColor="@color/lhl_base"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="0.3dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_marginBottom="2dp"
+						android:background="@color/lhl_base"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="40">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="65"
+							android:orientation="vertical">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="50"
+								android:gravity="center"
+								android:text="彭祖百忌"
+								android:textColor="@color/lhl_base"
+								android:textStyle="bold"/>
+
+							<TextView
+								android:id="@+id/tv_lhl_baiji"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="55"
+								android:gravity="top|center_horizontal"
+								android:text="壬不汲水更难提防\n申不安床鬼祟入房"
+								android:textColor="@color/lhl_base"/>
+
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.3dp"
+								android:background="@color/lhl_base"/>
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="35"
+							android:orientation="vertical">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="4"
+								android:gravity="center"
+								android:text="日五行"
+								android:textColor="@color/lhl_base"
+								android:textStyle="bold"/>
+
+							<TextView
+								android:id="@+id/tv_lhl_wuxing"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_weight="6"
+								android:gravity="center"
+								android:text="井泉水 建执位"
+								android:textColor="@color/lhl_base"/>
+						</LinearLayout>
+					</LinearLayout>
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="30">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginRight="5dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="3"
+							android:gravity="center"
+							android:text="凶神趋宜"
+							android:textColor="@color/lhl_base"
+							android:textStyle="bold"/>
+
+						<TextView
+							android:id="@+id/tv_lhl_xiongshen"
+							android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="7"
+							android:gravity="center_horizontal"
+							android:text="大煞 九焦 九坎 土府 五离"
+							android:textColor="@color/lhl_base"/>
+					</LinearLayout>
+
+					<View
+						android:layout_width="0.3dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentLeft="true"
+						android:layout_marginBottom="2dp"
+						android:background="@color/lhl_base"/>
+				</RelativeLayout>
+
+			</LinearLayout>
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp">
+
+			<ImageView
+				android:id="@+id/iv_lhl_shengxiao"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/lhl_sheep"/>
+		</FrameLayout>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</RelativeLayout>
+</LinearLayout>
