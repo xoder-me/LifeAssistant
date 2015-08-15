@@ -76,18 +76,15 @@ public class NewsAdapter extends BaseAdapter {
 		}
 
 		NewsBean news = newsList.get(position);
-		File file = bitmapUtils.getBitmapFileFromDiskCache(news.getLink());
-		if (file != null && file.exists()) {
-			holder.ivNewsImg.setImageURI(Uri.fromFile(file));
+		File img = bitmapUtils.getBitmapFileFromDiskCache(news.getLink());
+		if (img!=null && img.exists()) {
+			holder.ivNewsImg.setImageURI(Uri.fromFile(img));
+		} else if (news.getImageurls() != null && news.getImageurls().size() > 0) {
+			bitmapUtils.display(holder.ivNewsImg, news.getImageurls().get(0).getUrl(), new CustomBitmapLoadCallBack(holder));
 		} else {
 			holder.ivNewsImg.setImageResource(R.drawable.express_not_found);
 		}
 
-//		} else if (news.getImageurls() != null && news.getImageurls().size() > 0) {
-//			bitmapUtils.display(holder.ivNewsImg, news.getImageurls().get(0).getUrl(), new CustomBitmapLoadCallBack(holder));
-//		}
-
-//		holder.ivNewsImg.setImageResource(R.drawable.express_not_found);
 		holder.tvNewsTitle.setText(news.getTitle());
 		holder.tvNewsDesc.setText(news.getDesc());
 		holder.tvNewsSource.setText(news.getSource());
@@ -134,6 +131,7 @@ public class NewsAdapter extends BaseAdapter {
 		public void onLoadFailed(ImageView container, String uri, Drawable drawable) {
 //			holder.pbLoading.setVisibility(View.GONE);
 		}
+
 	}
 
 	private void fadeInDisplay(ImageView imageView, Bitmap bitmap) {

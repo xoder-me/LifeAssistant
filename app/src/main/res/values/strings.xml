@@ -1,8 +1,8 @@
 <resources>
-	<string name="app_name">生活助手</string>
+	<string name="app_name">便捷生活</string>
 
 	<!--侧滑菜单 选项文字-->
-	<string name="slide_menu_top_need">生活小助手</string>
+	<string name="slide_menu_top_need">便捷生活</string>
 	<string name="slide_menu_top_desc">简单、方便、好用！</string>
 	<string name="go_to_home">回到首页</string>
 	<string name="chat_machine">聊天机器人</string>
